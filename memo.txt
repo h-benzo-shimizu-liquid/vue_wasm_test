@@ -1,0 +1,5 @@
+Zenn React+TypeScript+WebAssembly+RustでWebアプリを作ってみる ( https://zenn.dev/akihiro_ya/articles/be988dedce32a2 )
+(1) yarn create vite . --template vue-ts
+(2) Install Rust ( https://zenn.dev/akihiro_ya/articles/be988dedce32a2 )
+(3) $ cargo install wasm-pack
+(4) cargo new --lib wasm

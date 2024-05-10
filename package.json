@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "wasm": "wasm-pack build --target web wasm",
     "build": "vue-tsc && vite build",
+    "build-wasm-dev": "wasm-pack build wasm --target web --dev",
+    "build-wasm-release": "wasm-pack build wasm --target web --release",
     "preview": "vite preview"
   },
   "dependencies": {
