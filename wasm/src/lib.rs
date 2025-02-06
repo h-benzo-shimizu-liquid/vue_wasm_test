@@ -61,6 +61,8 @@ impl WasmCamera {
       video.add_event_listener_with_callback("loadedmetadata", &resolve).unwrap();
       video.set_src_object(Option::Some(&stream));
     })).await?;
+    video.set_autoplay(true);
+    video.set_loop(true);
 
     JsFuture::from(video.play()?).await?;
 
